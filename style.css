@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "FunnyFont";
+  src: url(ComicNeue-Regular.ttf);
+}
+
+@media screen and (max-width: 900px) {
+  .item{
+    width: 100px;
+  }
+}
+
+h1{
+  font-size: 50px;
+  font-weight: 900;
+  font-family: FunnyFont;
+}
+
+h2{
+  font-size: 25px;
+  font-family: FunnyFont;
+}
+.Grid {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    border: 8px solid #000;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+    /* left: 50%;
+    top: 50%; */
+    width: 50%;
+    height: 5%;
+    margin-top: 5%;
+  }
+  .item {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 320px;
+    border: 5px solid rgba(0, 0, 0, 0.8);
+    height: 5px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    overflow-y: hidden;
+    font-family: FunnyFont;
+
+  }
+  #Add{
+    border: #000 solid 8px;
+    background-color: #fff;
+    font-weight: 900;
+    width: 200px;
+    height: 50px;
+    margin-top: 1%;
+    transition: all 0.25s ease-out;
+    font-family: FunnyFont;
+    font-size: 20px;
+    /* top: 70%; */
+  }
+  #Add:hover{
+    transform: translateY(-2px) ;
+    animation: hover 0.25s ease-out;
+    filter: brightness(80%);
+    cursor: pointer;
+  }
+  #Randomize{
+    border: #000 solid 8px;
+    background-color: #ff0000;
+    font-weight: 900;
+    width: 200px;
+    height: 50px;
+    margin-top: 1%;
+    transition: all 0.25s ease-out;
+    font-family: FunnyFont;
+    font-size: 20px;
+    /* top: 70%; */
+  }
+  #Randomize:hover{
+    transform: translateY(-2px) ;
+    animation: hover 0.25s ease-out;
+    filter: brightness(80%);
+    cursor: pointer;
+  }
+  .student{
+    font-size: 25px;
+    font-weight: 900; 
+    font-family: FunnyFont;
+    visibility: hidden;
+  }
+  /* @keyframes hover{
+    from{
+        filter: brightness(100%);
+    }
+
+    to
+    {
+        filter: brightness(50%);
+    }
+  } */
