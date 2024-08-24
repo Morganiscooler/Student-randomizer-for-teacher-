@@ -3,9 +3,9 @@
   src: url(ComicNeue-Regular.ttf);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   .item{
-    width: 100px;
+    max-width: 243px;
   }
 }
 
