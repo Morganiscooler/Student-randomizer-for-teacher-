@@ -5,8 +5,9 @@ let student1 = document.getElementById("student1");
 let student2 = document.getElementById("student2");
 
 function addStudent() {
-    const newItem = document.createElement("textarea");
+    const newItem = document.createElement("input");
         newItem.setAttribute("class", "item");
+        newItem.setAttribute("placeholder", "Enter student name");
         container.appendChild(newItem);
 }
 
