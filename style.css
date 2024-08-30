@@ -3,7 +3,7 @@
   src: url(ComicNeue-Regular.ttf);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 2000px) {
   .item{
     max-width: 243px;
   }
@@ -36,7 +36,7 @@ p{
     padding: 10px;
     /* left: 50%;
     top: 50%; */
-    width: 50%;
+    width: 610px;
     height: 5%;
     margin-top: 5%;
   }
@@ -64,6 +64,12 @@ p{
     font-size: 20px;
     /* top: 70%; */
   }
+
+  #Add:active, #Randomize:active, #Finish:active{
+    background-color: #363636;
+    filter: brightness(85%);
+  }
+
   #Add:hover{
     transform: translateY(-2px) ;
     animation: hover 0.25s ease-out;
@@ -81,6 +87,23 @@ p{
     font-family: FunnyFont;
     font-size: 20px;
     /* top: 70%; */
+  }
+  #Finish{
+    border: #000 solid 8px;
+    background-color: rgb(72, 94, 255);
+    font-weight: 900;
+    width: 200px;
+    height: 50px;
+    margin-top: 1%;
+    transition: all 0.25s ease-out;
+    font-family: FunnyFont;
+    font-size: 20px;
+  }
+  #Finish:hover{
+    transform: translateY(-2px) ;
+    animation: hover 0.25s ease-out;
+    filter: brightness(80%);
+    cursor: pointer;
   }
   #Randomize:hover{
     transform: translateY(-2px) ;

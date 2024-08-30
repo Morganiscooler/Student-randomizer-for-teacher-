@@ -10,13 +10,14 @@
     <center>
         <h1>Randomize seats</h1>
         <h2>Made with ❤️ by Morgan Cui, Block 6</h2>
-        <p>Note: If both students' names are the same when randomized, click the "Randomize" button again for a different result.</p>
+        <p>Note: Only click the finish button once you are done adding all the students. Otherwise, the randomizer may repeat names!</p>
         <div class="Grid">
             <input class="item" maxlength="19" placeholder="Enter student name"></input>
             <input class="item" maxlength="19" placeholder="Enter student name"></input>
         </div>
         <button id="Add" onclick="addStudent()">Add more students</button> 
-        <button id="Randomize" onclick="randomize()">Randomize</button>
+        <button id="Randomize">Randomize</button>
+        <button id="Finish" onclick="finish()">Finish adding</button>
         <p id="student1" class="student">test</p>
         <p id="student2" class="student">test</p>
     </center>
