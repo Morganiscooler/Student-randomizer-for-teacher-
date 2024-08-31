@@ -3,10 +3,11 @@ let randomizebtn = document.getElementById("Randomize");
 let container = document.querySelector(".Grid");
 let student1 = document.getElementById("student1");
 let student2 = document.getElementById("student2");
-
+let finishBtn = document.getElementById("Finish");
+randomizebtn.disabled = true;
+randomizebtn.style.opacity = 0.5;
 
 const storedNames = [];
-
 function addStudent() {
     const newItem = document.createElement("input");
         newItem.setAttribute("class", "item");
@@ -14,10 +15,23 @@ function addStudent() {
         container.appendChild(newItem);
 }
 function finish(){
+    randomizebtn.disabled = false;
+    randomizebtn.style.opacity = 1;
     for (var i=0; i<item.length; i++) {
         var text = item[i].value;
         storedNames.push(text);
     }
+    setTimeout(function() {
+        finishBtn.disabled = true;
+        finishBtn.style.opacity = 0.5;   
+        setTimeout(function() {
+            finishBtn.disabled = false;
+            finishBtn.style.opacity = 1;   
+        }, 2000);
+    }, 100);
+
+    // add a popup which warns about timeout and add timeout function later
+    // setTimeout(addStudent, 5000);
     console.log(storedNames);
 }
 
